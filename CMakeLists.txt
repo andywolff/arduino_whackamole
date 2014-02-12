@@ -119,6 +119,12 @@ add_executable(arduino_whackamole_node src/arduino_whackamole.cpp)
  )
 
 
+add_executable(whackamole_game_node src/whackamole_game.cpp)
+target_link_libraries(whackamole_game_node
+   ${catkin_LIBRARIES}
+ )
+
+
 #############
 ## Install ##
 #############
